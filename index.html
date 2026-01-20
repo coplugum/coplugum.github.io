@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klavye Pedleri İndirme Sayfası</title>
+    <style>
+        body {
+            background-color: #f4a300; /* Çılgın sarı bir arka plan */
+            font-family: 'Courier New', Courier, monospace; /* Daha dağınık bir yazı tipi */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            height: 100vh;
+            overflow-y: auto; /* Yalnızca dikey kaydırma aktif */
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 800px;
+            background-color: #ff6347; /* Domates kırmızısı bir arka plan */
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            margin-top: 40px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 50px;
+            color: #fff;
+            text-align: center;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+            letter-spacing: 4px;
+            text-shadow: 3px 3px 5px #000;
+        }
+
+        .file-section {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            background-color: #d2691e; /* Çikolata rengi */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .file-section:hover {
+            background-color: #ff4500; /* Hover'da kırmızı tonuna dönüşüyor */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .file-section h2 {
+            font-size: 35px;
+            color: #fff;
+            margin-right: 30px;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+
+        .download-btn {
+            background-color: #32cd32; /* Canlı yeşil bir buton */
+            color: #fff;
+            padding: 20px 40px;
+            font-size: 28px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+            letter-spacing: 3px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .download-btn:hover {
+            background-color: #228b22; /* Hover'da daha koyu yeşil */
+            transform: scale(1.1); /* Hover'da buton biraz büyüsün */
+        }
+
+        .download-btn:active {
+            background-color: #006400; /* Tıklanırken koyu yeşil */
+            transform: scale(0.9);
+        }
+
+        .container:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            background-color: #ff1493; /* Pink renkli bir arka plan */
+            opacity: 0.3;
+            z-index: -1;
+            transform: translateX(-50%);
+        }
+
+        .content {
+            margin-top: 40px;
+            overflow-y: auto; /* İçerik kısmında kaydırma olması sağlanacak */
+            max-height: calc(100vh - 200px); /* Sayfa yüksekliğine göre ayarlama */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Klavye Pedleri</h1>
+        <div class="content">
+            <!-- Dosya 1: Bubbles Ped -->
+            <div class="file-section">
+                <h2>Bubbles Ped</h2>
+                <a href="dosyalar/bubbles_ped.rar" class="download-btn" download>İndir</a>
+            </div>
+            <!-- Dosya 2: Pikachu Ped -->
+            <div class="file-section">
+                <h2>Pikachu Ped</h2>
+                <a href="dosyalar/pikachu_ped.rar" class="download-btn" download>İndir</a>
+            </div>
+            <!-- Dosya 3: Mathi Ped -->
+            <div class="file-section">
+                <h2>Mathi Ped</h2>
+                <a href="dosyalar/mathi_ped.rar" class="download-btn" download>İndir</a>
+            </div>
+            <!-- Dosya 4: Benten Ped -->
+            <div class="file-section">
+                <h2>Benten Ped</h2>
+                <a href="dosyalar/benten_ped.rar" class="download-btn" download>İndir</a>
+            </div>
+            <!-- Dosya 5: Adventure Time Ped -->
+            <div class="file-section">
+                <h2>Adventure Time Ped</h2>
+                <a href="dosyalar/adventure_time_ped.rar" class="download-btn" download>İndir</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
